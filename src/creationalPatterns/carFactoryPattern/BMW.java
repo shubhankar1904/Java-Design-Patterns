@@ -17,7 +17,7 @@ public class BMW implements Car{
 	
 	@Override
 	public Car createCar()	{
-		return new BMW();	
+		return this;	
 	}
 
 }

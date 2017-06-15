@@ -17,7 +17,7 @@ public class RED implements Color{
 	
 	@Override
 	public Color createColor()	{
-		return new RED();	
+		return this;	
 	}
 
 }

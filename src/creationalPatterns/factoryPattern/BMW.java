@@ -17,7 +17,7 @@ public class BMW extends Car{
 	
 	@Override
 	public Car createCar()	{
-		return new BMW();	
+		return this;
 	}
 
 }

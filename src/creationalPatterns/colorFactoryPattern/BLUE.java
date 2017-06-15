@@ -18,7 +18,7 @@ public class BLUE implements Color{
 	
 	@Override
 	public Color createColor()	{
-		return new BLUE();	
+		return this;	
 	}
 	
 }

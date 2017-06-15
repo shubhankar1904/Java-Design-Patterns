@@ -19,7 +19,7 @@ public class GREEN implements Color{
 	
 	@Override
 	public Color createColor()	{
-		return new GREEN();	
+		return this;
 	}
 
 }
