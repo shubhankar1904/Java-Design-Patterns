@@ -1,7 +1,7 @@
 package creationalPatterns.abstractFactory;
 
-import creationalPatterns.carFactoryPattern.CarFactory;
-import creationalPatterns.colorFactoryPattern.ColorFactory;
+import creationalPatterns.abstractFactory.carFactory.CarFactory;
+import creationalPatterns.abstractFactory.colorFactory.ColorFactory;
 
 public class FactoryProducer {
    public static AbstractFactory getFactory(String choice){

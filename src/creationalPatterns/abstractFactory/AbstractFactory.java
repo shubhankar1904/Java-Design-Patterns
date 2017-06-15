@@ -1,7 +1,7 @@
 package creationalPatterns.abstractFactory;
 
-import creationalPatterns.carFactoryPattern.Car;
-import creationalPatterns.colorFactoryPattern.Color;
+import creationalPatterns.abstractFactory.carFactory.Car;
+import creationalPatterns.abstractFactory.colorFactory.Color;
 
 public abstract class AbstractFactory {
 	
