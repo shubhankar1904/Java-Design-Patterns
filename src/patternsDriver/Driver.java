@@ -4,6 +4,8 @@ package patternsDriver;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
+import creationalPatterns.Builder.Meal;
+import creationalPatterns.Builder.MealBuilder;
 import creationalPatterns.abstractFactory.AbstractFactory;
 import creationalPatterns.abstractFactory.FactoryProducer;
 import creationalPatterns.abstractFactory.carFactory.Car;
@@ -174,6 +176,20 @@ public class Driver {
 		Item item2 = itemFactory.generate(item);
 		System.out.println("Created");
 		System.out.println(item2.toString());
+	}
+	
+	public static void builderPattern(){
+		 MealBuilder mealBuilder = new MealBuilder();
+
+	      Meal vegMeal = mealBuilder.prepareVegMeal();
+	      System.out.println("Veg Meal");
+	      vegMeal.showItems();
+	      System.out.println("Total Cost: " + vegMeal.getCost());
+
+	      Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
+	      System.out.println("\n\nNon-Veg Meal");
+	      nonVegMeal.showItems();
+	      System.out.println("Total Cost: " + nonVegMeal.getCost());
 	}
 }
 

@@ -39,6 +39,8 @@ public class CreationalPatternDriver {
 		
 		//Driver.prototypePattern();
 		
+		/*****************Builder Pattern******************/
+		Driver.builderPattern();
 	
 	}
 
